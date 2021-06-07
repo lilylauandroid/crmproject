@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/header_cloud_bg"
+    android:id="@+id/sale_error"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/ll_net_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_net_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textSize="20sp"
+            android:textColor="@color/black_text_cloud"
+            android:text="网络走丢了"/>
+        <TextView
+            android:id="@+id/tv_net_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/black_text_cloud"
+            android:text="请点击页面刷新" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_data_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_data_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background" />
+        <TextView
+            android:id="@+id/tv_data_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/black_text_cloud"
+            android:text="请点击页面刷新" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_data_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll_data_null_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/iv_data_null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher_background"/>
+            <TextView
+                android:id="@+id/tv_data_null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:paddingLeft="36dp"
+                android:paddingRight="36dp"
+                android:textColor="@color/black_text_cloud"
+                android:text="暂无数据"/>
+            <TextView
+                android:id="@+id/btn_data_null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_error"
+                android:paddingLeft="36dp"
+                android:paddingRight="36dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:visibility="gone"
+                android:textColor="@color/black_text_cloud"
+                android:layout_marginTop="36dp"
+                android:text=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_data_null_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+            <TextView
+                android:id="@+id/tv_dividing_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black_text_cloud"
+                android:singleLine="true"
+                android:text=""/>
+            <TextView
+                android:id="@+id/tv_tips_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:textColor="@color/black_text_cloud"
+                android:text=""/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

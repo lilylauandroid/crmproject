@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="看板"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:gravity="center"
+
+        android:background="@color/red_be1e13"
+        android:textColor="@color/header_cloud_bg"/>
+
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/rl_look_jidian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="0"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="27dp">
+            <TextView
+                android:id="@+id/tv_look_jidian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="7dip"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingRight="7dp"
+                android:gravity="center_vertical"
+                android:text="机电看板"
+                android:textSize="15sp"
+                android:textColor="@color/main_tab_tv_normal"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_look_create"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="22dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:tag="1"
+            android:background="@drawable/look_tab_check_bg">
+            <TextView
+                android:id="@+id/tv_look_create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="生产看板"
+                android:paddingLeft="7dip"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingRight="7dp"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="@color/red_be1e13"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_look_safe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="22dp">
+            <TextView
+                android:id="@+id/tv_look_safe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="安全看板"
+                android:textSize="15sp"
+                android:paddingLeft="7dip"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingRight="7dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/main_tab_tv_normal"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_look_guzhang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="3"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="27dp"
+            android:layout_marginLeft="22dp">
+            <TextView
+                android:id="@+id/tv_look_guzhang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="故障停机"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:paddingLeft="7dip"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingRight="7dp"
+                android:textColor="@color/main_tab_tv_normal"
+                />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:id="@+id/scrollview_data"
+        android:layout_marginBottom="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_business_data1"
+                android:layout_width="match_parent"
+                android:layout_height="108dip"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="11dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_bus_data_bg">
+
+                    <TextView
+                        android:id="@+id/tv_business_data_num1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="18dip"
+                        android:gravity="center_horizontal"
+                        android:text="17.71小时"
+                        android:textColor="@color/black_0e131a"
+                        android:textSize="20sp"
+                         />
+                    <TextView
+                        android:id="@+id/v_business_data2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_business_data_num1"
+                        android:layout_centerHorizontal="true"
+                        android:text="12.3%"
+                        android:textColor="#fff42850"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/v_business_data1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_business_data_num1"
+                        android:layout_centerHorizontal="true"
+                        android:text="12.3%"
+                        android:textColor="#fff42850"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_business_data1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/v_business_data1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="4dip"
+                        android:gravity="center_horizontal"
+                        android:text="日均运行时间"
+                        android:textColor="@color/black_5f626a"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="11dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_bus_data_bg">
+
+                    <TextView
+                        android:id="@+id/tv_business_data_num2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="18dip"
+                        android:gravity="center_horizontal"
+                        android:text="8"
+                        android:textColor="@color/black_0e131a"
+                        android:textSize="20sp"
+                         />
+                    <TextView
+                        android:id="@+id/v_business_data2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_business_data_num2"
+                        android:layout_centerHorizontal="true"
+                        android:text="12.3%"
+                        android:textColor="#fff42850"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/tv_business_data2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/v_business_data2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="4dip"
+                        android:gravity="center_horizontal"
+                        android:text="24小时内安全确认单"
+                        android:textColor="@color/black_5f626a"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_business_data3"
+                android:layout_width="match_parent"
+                android:layout_height="108dip"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="11dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_bus_data_bg">
+
+                    <TextView
+                        android:id="@+id/tv_business_data_num3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="18dip"
+                        android:gravity="center_horizontal"
+                        android:text="6"
+                        android:textColor="@color/black_0e131a"
+                        android:textSize="20sp"
+                         />
+
+                    <TextView
+                        android:id="@+id/v_business_data3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_business_data_num3"
+                        android:layout_centerHorizontal="true"
+                        android:text="12.3%"
+                        android:textColor="@color/green_21D37C"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_business_data3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/v_business_data3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="4dip"
+                        android:gravity="center_horizontal"
+                        android:text="日均故障次数"
+                        android:textColor="@color/black_5f626a"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="11dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_bus_data_bg">
+
+                    <TextView
+                        android:id="@+id/tv_business_data_num4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="18dip"
+                        android:gravity="center_horizontal"
+                        android:text="288"
+                        android:textColor="@color/black_0e131a"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/v_business_data4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_business_data_num4"
+                        android:layout_centerHorizontal="true"
+                        android:text="12.3%"
+                        android:textColor="@color/green_21D37C"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_business_data4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/v_business_data4"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="4dip"
+                        android:gravity="center_horizontal"
+                        android:text="24小时内提报问题"
+                        android:textColor="@color/black_5f626a"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!--图标内容-->
+            <LinearLayout
+                android:id="@+id/ll_look_jidian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="0"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="28dip"
+                    android:orientation="vertical"
+                    android:gravity="bottom"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="20dp">
+                    <TextView
+                        android:id="@+id/tv_create_data_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/black_0e131a"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:text="维修费用及预算（年）"/>
+                    <TextView
+                        android:id="@+id/tv_name_title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@id/tv_create_data_title"
+                        android:textColor="@color/black_5f626a"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/coal_yard_name"/>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/lineChart">
+
+                    <!-- <android.support.constraint.ConstraintLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="8dp">
+
+                         <View
+                             android:id="@+id/view_mine"
+                             android:layout_width="12dp"
+                             android:layout_height="12dp"
+                             android:background="@drawable/shape_round_blue"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent"
+                             app:layout_constraintTop_toTopOf="parent" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="8dp"
+                             android:layout_marginStart="8dp"
+                             android:text="问题数量"
+                             android:textSize="12sp"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toEndOf="@+id/view_mine"
+                             app:layout_constraintTop_toTopOf="parent" />
+                     </android.support.constraint.ConstraintLayout>
+
+                     <android.support.constraint.ConstraintLayout
+                         android:id="@+id/cl_shanghai"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="8dp">
+
+                         <TextView
+                             android:id="@+id/view_shanghai"
+                             android:layout_width="12dp"
+                             android:layout_height="12dp"
+                             android:background="@drawable/shape_round_orange"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent"
+                             app:layout_constraintTop_toTopOf="parent" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="8dp"
+                             android:layout_marginStart="8dp"
+                             android:text="已处理数量"
+                             android:textSize="12sp"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toEndOf="@+id/view_shanghai"
+                             app:layout_constraintTop_toTopOf="parent" />
+                     </android.support.constraint.ConstraintLayout>
+
+                     <android.support.constraint.ConstraintLayout
+                         android:id="@+id/cl_shenzhen"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="8dp">
+
+                         <View
+                             android:id="@+id/view_shenzhen"
+                             android:layout_width="12dp"
+                             android:layout_height="12dp"
+                             android:background="@drawable/shape_round_gray"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent"
+                             app:layout_constraintTop_toTopOf="parent" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="8dp"
+                             android:layout_marginStart="8dp"
+                             android:text="累计待处理数量"
+                             android:textSize="12sp"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toEndOf="@+id/view_shenzhen"
+                             app:layout_constraintTop_toTopOf="parent" />
+                     </android.support.constraint.ConstraintLayout>
+     -->
+
+
+                </LinearLayout>
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/lineChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+            <!--图标内容-->
+            <LinearLayout
+                android:id="@+id/ll_look_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="1"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="28dip"
+                    android:orientation="vertical"
+                    android:gravity="bottom"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp">
+                    <TextView
+                        android:id="@+id/tv_create_data_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/black_0e131a"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:text="维修费用及预算（年）"/>
+                    <TextView
+                        android:id="@+id/tv_name_title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@id/tv_create_data_title"
+                        android:textColor="@color/black_5f626a"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/coal_yard_name"/>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/lineChart">
+
+                    <!-- <android.support.constraint.ConstraintLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="8dp">
+
+                         <View
+                             android:id="@+id/view_mine"
+                             android:layout_width="12dp"
+                             android:layout_height="12dp"
+                             android:background="@drawable/shape_round_blue"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent"
+                             app:layout_constraintTop_toTopOf="parent" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="8dp"
+                             android:layout_marginStart="8dp"
+                             android:text="问题数量"
+                             android:textSize="12sp"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toEndOf="@+id/view_mine"
+                             app:layout_constraintTop_toTopOf="parent" />
+                     </android.support.constraint.ConstraintLayout>
+
+                     <android.support.constraint.ConstraintLayout
+                         android:id="@+id/cl_shanghai"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="8dp">
+
+                         <TextView
+                             android:id="@+id/view_shanghai"
+                             android:layout_width="12dp"
+                             android:layout_height="12dp"
+                             android:background="@drawable/shape_round_orange"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent"
+                             app:layout_constraintTop_toTopOf="parent" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="8dp"
+                             android:layout_marginStart="8dp"
+                             android:text="已处理数量"
+                             android:textSize="12sp"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toEndOf="@+id/view_shanghai"
+                             app:layout_constraintTop_toTopOf="parent" />
+                     </android.support.constraint.ConstraintLayout>
+
+                     <android.support.constraint.ConstraintLayout
+                         android:id="@+id/cl_shenzhen"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="8dp">
+
+                         <View
+                             android:id="@+id/view_shenzhen"
+                             android:layout_width="12dp"
+                             android:layout_height="12dp"
+                             android:background="@drawable/shape_round_gray"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent"
+                             app:layout_constraintTop_toTopOf="parent" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="8dp"
+                             android:layout_marginStart="8dp"
+                             android:text="累计待处理数量"
+                             android:textSize="12sp"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toEndOf="@+id/view_shenzhen"
+                             app:layout_constraintTop_toTopOf="parent" />
+                     </android.support.constraint.ConstraintLayout>
+     -->
+
+
+                </LinearLayout>
+                <com.crmproject.dashboardview.view.DashboardView
+                    android:id="@+id/dashboardView"
+                    android:layout_width="280dp"
+                    android:layout_height="280dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    app:centerCircleColor="@color/red_be1e13"
+                    app:endProgressColor="@color/skyblue"
+                    app:progressStrokeWidth="10dp"
+                    app:startProgressColor="@color/red_be1e13"
+                    app:tikeStrColor="@color/red_be1e13"
+                    app:textColor="@color/black_0e131a"
+                    android:textSize="15sp"
+                    app:tikeStrSize="10dp"/>
+            </LinearLayout>
+            <!--图标内容-->
+            <LinearLayout
+                android:id="@+id/ll_look_safe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="2"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="28dip"
+                    android:orientation="vertical"
+                    android:gravity="bottom"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="20dp">
+                    <TextView
+                        android:id="@+id/tv_create_data_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/black_0e131a"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:text="维修费用及预算（年）"/>
+                    <TextView
+                        android:id="@+id/tv_name_title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@id/tv_create_data_title"
+                        android:textColor="@color/black_5f626a"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/coal_yard_name"/>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/lineChart">
+
+                    <!-- <android.support.constraint.ConstraintLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="8dp">
+
+                         <View
+                             android:id="@+id/view_mine"
+                             android:layout_width="12dp"
+                             android:layout_height="12dp"
+                             android:background="@drawable/shape_round_blue"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent"
+                             app:layout_constraintTop_toTopOf="parent" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="8dp"
+                             android:layout_marginStart="8dp"
+                             android:text="问题数量"
+                             android:textSize="12sp"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toEndOf="@+id/view_mine"
+                             app:layout_constraintTop_toTopOf="parent" />
+                     </android.support.constraint.ConstraintLayout>
+
+                     <android.support.constraint.ConstraintLayout
+                         android:id="@+id/cl_shanghai"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="8dp">
+
+                         <TextView
+                             android:id="@+id/view_shanghai"
+                             android:layout_width="12dp"
+                             android:layout_height="12dp"
+                             android:background="@drawable/shape_round_orange"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent"
+                             app:layout_constraintTop_toTopOf="parent" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="8dp"
+                             android:layout_marginStart="8dp"
+                             android:text="已处理数量"
+                             android:textSize="12sp"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toEndOf="@+id/view_shanghai"
+                             app:layout_constraintTop_toTopOf="parent" />
+                     </android.support.constraint.ConstraintLayout>
+
+                     <android.support.constraint.ConstraintLayout
+                         android:id="@+id/cl_shenzhen"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="8dp">
+
+                         <View
+                             android:id="@+id/view_shenzhen"
+                             android:layout_width="12dp"
+                             android:layout_height="12dp"
+                             android:background="@drawable/shape_round_gray"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent"
+                             app:layout_constraintTop_toTopOf="parent" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="8dp"
+                             android:layout_marginStart="8dp"
+                             android:text="累计待处理数量"
+                             android:textSize="12sp"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toEndOf="@+id/view_shenzhen"
+                             app:layout_constraintTop_toTopOf="parent" />
+                     </android.support.constraint.ConstraintLayout>
+     -->
+
+
+                </LinearLayout>
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/chart"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" />
+            </LinearLayout>
+            <!--图标内容-->
+            <LinearLayout
+                android:id="@+id/ll_look_guzhang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="3"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="28dip"
+                    android:orientation="vertical"
+                    android:gravity="bottom"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="20dp">
+                    <TextView
+                        android:id="@+id/tv_create_data_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/black_0e131a"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:text="维修费用及预算（年）"/>
+                    <TextView
+                        android:id="@+id/tv_name_title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@id/tv_create_data_title"
+                        android:textColor="@color/black_5f626a"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/coal_yard_name"/>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/lineChart">
+
+                    <!-- <android.support.constraint.ConstraintLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="8dp">
+
+                         <View
+                             android:id="@+id/view_mine"
+                             android:layout_width="12dp"
+                             android:layout_height="12dp"
+                             android:background="@drawable/shape_round_blue"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent"
+                             app:layout_constraintTop_toTopOf="parent" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="8dp"
+                             android:layout_marginStart="8dp"
+                             android:text="问题数量"
+                             android:textSize="12sp"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toEndOf="@+id/view_mine"
+                             app:layout_constraintTop_toTopOf="parent" />
+                     </android.support.constraint.ConstraintLayout>
+
+                     <android.support.constraint.ConstraintLayout
+                         android:id="@+id/cl_shanghai"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="8dp">
+
+                         <TextView
+                             android:id="@+id/view_shanghai"
+                             android:layout_width="12dp"
+                             android:layout_height="12dp"
+                             android:background="@drawable/shape_round_orange"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent"
+                             app:layout_constraintTop_toTopOf="parent" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="8dp"
+                             android:layout_marginStart="8dp"
+                             android:text="已处理数量"
+                             android:textSize="12sp"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toEndOf="@+id/view_shanghai"
+                             app:layout_constraintTop_toTopOf="parent" />
+                     </android.support.constraint.ConstraintLayout>
+
+                     <android.support.constraint.ConstraintLayout
+                         android:id="@+id/cl_shenzhen"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="8dp">
+
+                         <View
+                             android:id="@+id/view_shenzhen"
+                             android:layout_width="12dp"
+                             android:layout_height="12dp"
+                             android:background="@drawable/shape_round_gray"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent"
+                             app:layout_constraintTop_toTopOf="parent" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="8dp"
+                             android:layout_marginStart="8dp"
+                             android:text="累计待处理数量"
+                             android:textSize="12sp"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toEndOf="@+id/view_shenzhen"
+                             app:layout_constraintTop_toTopOf="parent" />
+                     </android.support.constraint.ConstraintLayout>
+     -->
+
+
+                </LinearLayout>
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/barChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:forceHasOverlappingRendering="true"
+                     />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

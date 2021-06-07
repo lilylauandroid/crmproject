@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="main_tab_bar_bg">@color/main_tab_bar_bg</drawable>
+    <drawable name="window_bg">@color/window_bg</drawable>
+    <drawable name="window_bg_xft">@color/window_bg_xft</drawable>
+    <drawable name="window_bg_paihangbang">@color/window_bg_paihangbang</drawable>
+    <drawable name="divider_line">@color/dividerline_new</drawable>
+    <drawable name="header_n">@color/transparent</drawable>
+    <drawable name="filter_item_normal">#fffcf6c4</drawable>
+    <drawable name="filter_item_selected">#ffffd300</drawable>
+    <drawable name="header_bar_bg">@color/header_bar</drawable>
+    <drawable name="main_tab_btn_pressed">@color/main_tab_btn_pressed</drawable>
+    <drawable name="main_tab_btn_normal">@color/main_tab_btn_normal</drawable>
+    <drawable name="cj_divider_line">@color/cj_dividerline</drawable>
+
+</resources>

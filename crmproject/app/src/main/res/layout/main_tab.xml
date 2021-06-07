@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:clipChildren="false">
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" >
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+        <View
+            android:id="@+id/view_tab_divider"
+            style="@style/line"/>
+        <LinearLayout
+            style="@style/fill_width"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:clipChildren="false">
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="fill_parent"
+                android:layout_height="52dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    style="@style/main_tab_bottom_new"
+                    android:drawableTop="@drawable/main_tab_message"
+                    android:tag="radio_button0"
+                    android:textColor="@color/maintab_radio_button"
+                    android:text="首页" />
+                <TextView
+                    android:id="@+id/tv_message_count_personal"
+                    android:layout_width="18dip"
+                    android:layout_height="18dip"
+                    android:layout_marginLeft="-36dip"
+                    android:layout_marginRight="18dip"
+                    android:layout_marginTop="-13dip"
+                    android:background="@drawable/home_red_icon"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:visibility="gone"/>
+
+                <RadioButton
+                    style="@style/main_tab_bottom_new"
+                    android:drawableTop="@drawable/main_tab_customer"
+                    android:tag="radio_button1"
+                    android:textColor="@color/maintab_radio_button"
+                    android:text="看板" />
+
+                <TextView
+                    android:id="@+id/tv_message_count"
+                    android:layout_width="18dip"
+                    android:layout_height="18dip"
+                    android:layout_marginLeft="-46dip"
+                    android:layout_marginRight="25dip"
+                    android:layout_marginTop="-13dip"
+                    android:background="@drawable/home_red_icon"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:visibility="gone"/>
+
+
+                <RadioButton
+                    style="@style/main_tab_bottom_new"
+                    android:drawableTop="@drawable/main_tab_gg"
+                    android:tag="radio_button2"
+                    android:textColor="@color/maintab_radio_button"
+                    android:text="菜单" />
+
+                <RadioButton
+                    style="@style/main_tab_bottom_new"
+                    android:drawableTop="@drawable/main_tab_info"
+                    android:tag="radio_button3"
+                    android:textColor="@color/maintab_radio_button"
+                    android:text="我的" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+</TabHost>

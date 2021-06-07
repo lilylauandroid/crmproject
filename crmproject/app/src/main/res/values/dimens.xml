@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 头部高度 -->
+    <dimen name="header_height">42.0dip</dimen>
+    <!-- 头部字体大小 -->
+    <dimen name="header_textsize">18.0dp</dimen>
+    <!-- 筛选框宽 -->
+    <dimen name="pop_filter_width">320.0dip</dimen>
+    <!-- 筛选框高 -->
+    <dimen name="pop_filter_height">380.0dip</dimen>
+    <!-- 筛选头布按钮高 -->
+    <dimen name="filter_head_btn_height">48.0dp</dimen>
+    <!-- 筛选头布按钮宽 -->
+    <dimen name="filter_head_btn_width">106.5dp</dimen>
+
+    <!-- list_item下大号字体 -->
+    <dimen name="list_item_big">16.0dp</dimen>
+    <!-- list_item下中号字体 -->
+    <dimen name="list_item_middle">14.0dp</dimen>
+    <!-- list_item下小号字体 -->
+    <dimen name="list_item_small">12.0dp</dimen>
+    <!-- list_item下超大号字体 -->
+    <dimen name="list_item_huge">20.0dp</dimen>
+    <!-- 土司或者加载对话框字体大小 -->
+    <dimen name="toast_or_process">14.0dp</dimen>
+    <dimen name="bottom_tab_font_size">12.0dp</dimen>
+    <dimen name="bottom_tab_padding_up">6.0dip</dimen>
+    <dimen name="bottom_tab_padding_drawable">1.0dip</dimen>
+    <dimen name="main_tab_bar_height">60.0dip</dimen>
+    <dimen name="advertise_height">50.0dip</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <!-- 四类字体大小 -->
+    <dimen name="micro_text_size">12dp</dimen>
+    <dimen name="small_text_size">14dp</dimen>
+    <dimen name="medium_text_size">18dp</dimen>
+    <dimen name="large_text_size">22dp</dimen>
+    <!-- 四类字体大小 -->
+
+
+    <!-- 首页Gallery高度 -->
+    <dimen name="index_gallery_height">120dp</dimen>
+    <!-- 首页Gallery高度 -->
+    <dimen name="mycar_main_next_check_circle_width">15px</dimen>
+    <dimen name="historyscore_tb">10dp</dimen>
+    <dimen name="linear_button_height">60dp</dimen>
+
+    <!-- Margin、Padding 的多少 -->
+    <dimen name="wh_0">0dp</dimen>
+    <dimen name="mp_2">2dp</dimen>
+    <dimen name="mp_5">5dp</dimen>
+    <dimen name="mp_10">10dp</dimen>
+    <dimen name="mp_15">15dp</dimen>
+    <dimen name="mp_20">20dp</dimen>
+    <dimen name="mp_25">25dp</dimen>
+    <dimen name="mp_30">30dp</dimen>
+    <dimen name="mp_35">35dp</dimen>
+    <dimen name="mp_40">40dp</dimen>
+    <dimen name="mp_45">45dp</dimen>
+    <dimen name="mp_50">50dp</dimen>
+    <dimen name="mp_60">60dp</dimen>
+    <dimen name="mp_80">80dp</dimen>
+    <dimen name="mp_90">90dp</dimen>
+    <!-- 文字的大小 -->
+    <dimen name="f_10">10dp</dimen>
+    <dimen name="f_11">11dp</dimen>
+    <dimen name="f_12">12dp</dimen>
+    <dimen name="f_13">13dp</dimen>
+    <dimen name="f_14">14dp</dimen>
+    <dimen name="f_15">15dp</dimen>
+    <dimen name="f_16">16dp</dimen>
+    <dimen name="f_17">17dp</dimen>
+    <dimen name="f_18">18dp</dimen>
+    <dimen name="f_19">19dp</dimen>
+    <dimen name="f_20">20dp</dimen>
+    <dimen name="f_21">21dp</dimen>
+    <dimen name="f_22">22dp</dimen>
+    <dimen name="f_23">23dp</dimen>
+
+    <dimen name="mainheader_height">48dip</dimen>
+
+    <!-- 弹出的对话框字体大小 -->
+    <dimen name="dailog_text_size">18dp</dimen>
+
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="px_32">32px</dimen>
+    <dimen name="pickerview_textsize">20sp</dimen>
+</resources>

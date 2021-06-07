@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/change_shifts_title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#BE1E13">
+
+        <ImageView
+            android:id="@+id/change_shifts_back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="12dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:src="@drawable/left_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="交接班"
+            android:textColor="#ffffffff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="2021-6-5"
+        android:textColor="#ff666666"
+        android:textSize="13sp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center_vertical"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="厂领导"
+            android:textColor="#ff333333"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金辛达"
+            android:layout_marginLeft="100dp"
+            android:textColor="#ff333333"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新建"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            android:layout_marginLeft="190dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="八点班"
+            android:textColor="#ffbe1e13"
+            android:layout_alignParentRight="true"
+            android:textSize="14sp"
+            android:drawableRight="@drawable/right_arrow"
+            android:drawablePadding="17dp"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#DDDDDD"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="2021-6-4"
+        android:textColor="#ff666666"
+        android:textSize="13sp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center_vertical"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一期白班"
+            android:textColor="#ff333333"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金辛达"
+            android:layout_marginLeft="100dp"
+            android:textColor="#ff333333"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已交接"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            android:layout_marginLeft="190dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="四点班"
+            android:textColor="#ffbe1e13"
+            android:layout_alignParentRight="true"
+            android:textSize="14sp"
+            android:drawableRight="@drawable/right_arrow"
+            android:drawablePadding="17dp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#DDDDDD"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center_vertical"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="厂领导"
+            android:textColor="#ff333333"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金辛达"
+            android:layout_marginLeft="100dp"
+            android:textColor="#ff333333"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新建"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            android:layout_marginLeft="190dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="八点班"
+            android:textColor="#ffbe1e13"
+            android:layout_alignParentRight="true"
+            android:textSize="14sp"
+            android:drawableRight="@drawable/right_arrow"
+            android:drawablePadding="17dp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#DDDDDD"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="2021-6-3"
+        android:textColor="#ff666666"
+        android:textSize="13sp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center_vertical"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生产1班"
+            android:textColor="#ff333333"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金辛达"
+            android:layout_marginLeft="100dp"
+            android:textColor="#ff333333"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已交接"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            android:layout_marginLeft="190dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="零点班"
+            android:textColor="#ffbe1e13"
+            android:layout_alignParentRight="true"
+            android:textSize="14sp"
+            android:drawableRight="@drawable/right_arrow"
+            android:drawablePadding="17dp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#DDDDDD"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center_vertical"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="二期检修班"
+            android:textColor="#ff333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金辛达"
+            android:layout_marginLeft="100dp"
+            android:textColor="#ff333333"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已交接"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            android:layout_marginLeft="190dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="四点班"
+            android:textColor="#ffbe1e13"
+            android:layout_alignParentRight="true"
+            android:textSize="14sp"
+            android:drawableRight="@drawable/right_arrow"
+            android:drawablePadding="17dp"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#DDDDDD"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center_vertical"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电工班"
+            android:textColor="#ff333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金辛达"
+            android:layout_marginLeft="100dp"
+            android:textColor="#ff333333"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已交接"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            android:layout_marginLeft="190dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="八点班"
+            android:textColor="#ffbe1e13"
+            android:layout_alignParentRight="true"
+            android:textSize="14sp"
+            android:drawableRight="@drawable/right_arrow"
+            android:drawablePadding="17dp"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#DDDDDD"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center_vertical"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="二期白班"
+            android:textColor="#ff333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金辛达"
+            android:layout_marginLeft="100dp"
+            android:textColor="#ff333333"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已交接"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            android:layout_marginLeft="190dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="八点班"
+            android:textColor="#ffbe1e13"
+            android:layout_alignParentRight="true"
+            android:textSize="14sp"
+            android:drawableRight="@drawable/right_arrow"
+            android:drawablePadding="17dp"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#DDDDDD"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已经到最后了"
+        android:textColor="#ff999999"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="12sp" />
+</LinearLayout>

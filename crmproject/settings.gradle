@@ -1,0 +1,4 @@
+include ':app', ':MPChartLib'
+rootProject.name='crmproject'
+//include ':net_lib'
+//include ':MPChartLib'

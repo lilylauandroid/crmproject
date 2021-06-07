@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="textwidth" format="integer" />
+    <attr name="typeface">
+        <enum name="normal" value="0" />
+        <enum name="sans" value="1" />
+        <enum name="serif" value="2" />
+        <enum name="monospace" value="3" />
+    </attr>
+
+  <!--  <declare-styleable name="SFTextView">
+        <attr name="textwidth" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="reference|color" />
+        <attr name="lineSpacingExtra" format="dimension" />
+        <attr name="typeface" />
+    </declare-styleable>-->
+    <declare-styleable name="ImageTextView">
+        <attr name="text_size" format="dimension" />
+        <attr name="text_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="progressBarTextColor" format="color" />
+        <attr name="progressBarTextSize" format="dimension" />
+        <attr name="max" format="float"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+        <declare-styleable name="SwitchButton">
+        <attr name="bmWidth" format="dimension"></attr>
+        <attr name="bmHeight" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="ScrollTextLayout">
+
+        <!-- 文字颜色(默认颜色为黑色) -->
+        <attr name="lineTextColor" format="color" />
+        <!-- 文字大小(默认文字大小为16sp) -->
+        <attr name="lineTextSize" format="float" />
+        <!-- 文字(默认10dp) -->
+        <attr name="lineTextSpace" format="dimension" />
+
+        <!-- 文字滚动显示行数(默认5行) -->
+        <attr name="scrollLines" format="integer" />
+        <!-- 滚动一屏所需时间,单位毫秒(默认5000毫秒) -->
+        <attr name="scrollScreenTime" format="integer" />
+
+    </declare-styleable>
+
+    <declare-styleable name="CodeViewLayout">
+
+        <!-- code码文字颜色(默认颜色为黑色) -->
+        <attr name="codeTextColor" format="color"/>
+
+        <!-- code码文字大小(默认文字大小为16sp) -->
+        <attr name="codeTextSize" format="integer"/>
+
+        <!-- code码之间的间隙(默认为2dp) -->
+        <attr name="codeSpace" format="dimension"/>
+
+        <!-- code码的背景图(默认为背景框矩形编辑框) -->
+        <attr name="codeBackground" format="reference"/>
+
+        <!-- code码的选中背景图(默认为背景框矩形编辑框) -->
+        <attr name="codeBackgroundF" format="reference"/>
+
+        <!-- code码的宽度(默认为文字高度)-->
+        <attr name="codeWidth" format="dimension"/>
+
+        <!-- code码的高度(默认为文字高度) -->
+        <attr name="codeHeight" format="dimension"/>
+
+        <!-- code码的个数(默认为4个) -->
+        <attr name="codeNunber" format="integer"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="TagFlowLayout">
+        <attr name="max_select" format="integer"></attr>
+        <attr name="tag_gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="GestureImageView">
+        <!--是否开启手势操作,默认为true-->
+        <attr name="isGesture" format="boolean"/>
+        <!--是否开启边界模式,关闭后边界图片可以移动到任何位置.默认为true-->
+        <attr name="isBoundary" format="boolean"/>
+        <!--是否可以旋转操作,只有边界模式关闭后才有效.默认为true-->
+        <attr name="isRotate" format="boolean"/>
+        <!--最小缩放比例,设置值必须小于或等于1,否则无效.默认为1-->
+        <attr name="minScale" format="float"/>
+        <!--最小缩放比例,设置值必须大于或等于1,否则无效.默认为2-->
+        <attr name="maxScale" format="float"/>
+        <!--最小缩放回弹比例,设置值必须小于等于最小缩放比例,否则无效.默认等于最小缩放比例(等于表示无回弹效果)-->
+        <attr name="minBackScale" format="float"/>
+        <!--最大缩放回弹比例,设置值必须大于等于最大缩放比例,否则无效.默认等于最大缩放比例(等于表示无回弹效果)-->
+        <attr name="maxBackScale" format="float"/>
+    </declare-styleable>
+    <!-- WheelView自定义属性 -->
+    <declare-styleable name="pickerview">
+        <attr name="wheelview_gravity">
+            <enum name="center" value="17"/>
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+        </attr>
+        <attr name="wheelview_textSize" format="dimension"/>
+        <attr name="wheelview_textColorOut" format="color"/>
+        <attr name="wheelview_textColorCenter" format="color"/>
+        <attr name="wheelview_dividerColor" format="color"/>
+        <attr name="wheelview_lineSpacingMultiplier" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="SliderRadioGroup">
+        <!-- 滑块圆角 -->
+        <attr name="slider_round" format="dimension"/>
+        <!-- 滑块高度 -->
+        <attr name="slider_height" format="dimension"/>
+        <!-- 滑块颜色 -->
+        <attr name="slider_color" format="color"/>
+        <!-- 滑块宽度占比 -->
+        <attr name="slider_width_weight" format="float"/>
+        <!-- 底部线高 -->
+        <attr name="bottom_line_height" format="dimension"/>
+        <!-- 底部线颜色 -->
+        <attr name="bottom_line_color" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="CircleProgress">
+        <attr name="numOfCircles" format="integer"/>
+        <attr name="maxRadius" format="dimension"/>
+        <attr name="minRadius" format="dimension"/>
+        <attr name="rotateSpeedInMillis" format="integer"/>
+        <attr name="isClockwise" format="boolean"/>
+        <attr name="circlesColor" format="color"/>
+    </declare-styleable>
+    <!-- ShadowCardView自定义属性 -->
+    <declare-styleable name="ShadowCardView">
+        <attr name="shadowCardColor" format="color"/>
+        <attr name="shadowColor" format="color"/>
+        <attr name="shadowWidth" format="dimension"/>
+        <attr name="shadowWidthLeft" format="dimension"/>
+        <attr name="shadowWidthTop" format="dimension"/>
+        <attr name="shadowWidthRight" format="dimension"/>
+        <attr name="shadowWidthBottom" format="dimension"/>
+        <attr name="shadowOffsetX" format="dimension"/>
+        <attr name="shadowOffsetY" format="dimension"/>
+        <attr name="shadowRadius" format="dimension"/>
+        <attr name="shadowAmbiguity" format="integer"/>
+    </declare-styleable>
+    <attr name="textColor" format="color"/>
+    <declare-styleable name="DashboardView">
+        <attr name="padding" format="dimension"/>
+        <attr name="progressStrokeWidth" format="dimension"/>
+        <attr name="android:text"/>
+        <attr name="unit" format="string"/>
+        <attr name="android:textSize"/>
+        <attr name="backgroundColor" format="color" />
+        <attr name="textColor"/>
+        <attr name="startProgressColor" format="color" />
+        <attr name="endProgressColor" format="color" />
+        <attr name="startNumber" format="integer" />
+        <attr name="maxNumber" format="integer" />
+        <attr name="progressColor" format="color"/>
+        <attr name="tikeStrArray" format="reference"/>
+        <attr name="tikeStrSize" format="dimension"/>
+        <attr name="tikeStrColor" format="color"/>
+        <attr name="centerCircleColor" format="color"/>
+    </declare-styleable>
+</resources>
